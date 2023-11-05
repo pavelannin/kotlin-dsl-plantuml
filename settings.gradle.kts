@@ -1,15 +1,24 @@
 pluginManagement {
     repositories {
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
     }
 }
 
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+@Suppress(names = ["UnstableApiUsage"])
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("deps") {
+            from(files("dependencies.versions.toml"))
+        }
+    }
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+    }
 }
 
-rootProject.name = "kotlin-dsl-plantuml"
+rootProject.name = "Kotlin DSL Plantuml"
 
 include(
     "dsl",
