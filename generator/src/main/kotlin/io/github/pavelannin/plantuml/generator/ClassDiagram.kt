@@ -98,6 +98,7 @@ private fun AttributeUml.convertToPlantuml(): String {
                     append("(")
                     attribute.arguments
                         .joinToString(separator = ", ") { "${it.name}${if (it.type.isNotBlank()) ": ${it.type}" else ""}" }
+                        .let(::append)
                     append(")")
                 }
             }
