@@ -6,7 +6,7 @@ plugins {
 
 val PUBLISH_GROUP_ID = "io.github.pavelannin"
 val PUBLISH_ARTIFACT_ID = "kotlin-plantuml-generator"
-val PUBLISH_VERSION = "1.0.0"
+val PUBLISH_VERSION = "1.0.1"
 
 group = PUBLISH_GROUP_ID
 version = PUBLISH_VERSION

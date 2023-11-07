@@ -1,8 +1,8 @@
 The library allows you to create plantuml via Kotlin DSL.
 
 [![License](https://img.shields.io/badge/license-MIT-blue)](http://www.opensource.org/licenses/mit-license.php)
-![Maven Central](https://img.shields.io/maven-central/v/io.github.pavelannin/kotlin-plantuml-dsl)
-![Maven Central](https://img.shields.io/maven-central/v/io.github.pavelannin/kotlin-plantuml-generator)
+![Maven Central](https://img.shields.io/maven-central/v/io.github.pavelannin/kotlin-plantuml-dsl?label=kotlin-plantuml-dsl)
+![Maven Central](https://img.shields.io/maven-central/v/io.github.pavelannin/kotlin-plantuml-generator?label=kotlin-plantuml-generator)
 
 Library support:
 - [ ] Sequence diagram
@@ -22,7 +22,7 @@ Library support:
 implementation "io.github.pavelannin:kotlin-plantuml-dsl:1.0.0"
 
 // DSL with generator
-implementation "io.github.pavelannin:kotlin-plantuml-generator:1.0.0"
+implementation "io.github.pavelannin:kotlin-plantuml-generator:1.0.1"
 ```
 
 # Quickstart
@@ -202,7 +202,7 @@ entity EntityType
 
 enum EnumType {
 {field} case1
-{field} case2()
+{field} case2(param1: String, param2: String)
 }
 
 exception ExceptionType
